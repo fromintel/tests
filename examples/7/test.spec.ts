@@ -1,6 +1,12 @@
 const _ = require('lodash');
 const toArabic = require('./generative');
 
+
+/*
+* toArabic. Первое, что стоит отметить - функция тестирует только happy pass.
+* В данном случае нет тестов на то, если бы входные данные были как минимум не того типа.
+Антипаттерны: Happy Pat
+* */
 test('generative', () => {
     _.transform({
         'I': 1,
